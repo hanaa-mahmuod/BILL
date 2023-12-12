@@ -1,0 +1,46 @@
+﻿<Window x:Class="BILL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BILL" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+            Title="Invoice" Height="700" Width="1300" ResizeMode="NoResize" WindowStyle="None" FontFamily="Roboto" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="247" Source="/_00321075-e172-4551-b0c3-11b7b1235345-removebg-preview.png" Margin="0,-5,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,225,0,0" TextWrapping="Wrap" Text="Patient Name" VerticalAlignment="Top" Height="23" Width="107" RenderTransformOrigin="0.421,2.509" FontWeight="Bold" Background="#4EB1B6" />
+        <TextBlock HorizontalAlignment="Left" Margin="36,271,0,0" TextWrapping="Wrap" Text="Patient ID" VerticalAlignment="Top" Height="29" Width="107" FontWeight="Bold" Background="#4EB1B6"/>
+        <TextBox HorizontalAlignment="Left" Margin="174,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="23" Background="LightGray"/>
+        <TextBox HorizontalAlignment="Left" Margin="174,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="23" Background="LightGray"/>
+        <DataGrid x:Name="calc_bill" Margin="216,338,597,212" FontWeight="Bold" Grid.Column="2" >
+            <DataGrid.Resources >
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#4EB1B6"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="#FF172F62"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Service Name" Width="200"  FontWeight="Bold" />
+                <DataGridTextColumn Header="Service price" Width="160" FontWeight="Bold" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Total" HorizontalAlignment="Center" Margin="0,551,0,0" VerticalAlignment="Top" Height="56" Width="228" Background="#FF1C949A" FontSize="35" FontStyle="Normal" FontWeight="ExtraBold" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Margin="828,551,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" Height="56" Background="LightGray"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="0,646,0,0" VerticalAlignment="Top" Width="922" Source="/Screenshot 2023-12-12 182408.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="948,0,0,0" VerticalAlignment="Top" Width="1057" Source="/Screenshot 2023-12-12 182849.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="948,607,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button  HorizontalAlignment="Left" Margin="70,515,0,0" VerticalAlignment="Top" Height="64" Background="Yellow" Width="73">
+            <materialDesign:PackIcon Kind="Printer" Height="32" Width="36"/>
+        </Button>
+
+
+    </Grid>
+</Window>

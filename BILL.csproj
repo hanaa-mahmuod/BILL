@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Hospital Management System.jpeg" />
+    <None Remove="Screenshot 2023-12-12 170658.png" />
+    <None Remove="Screenshot 2023-12-12 182408.png" />
+    <None Remove="Screenshot 2023-12-12 182849.png" />
+    <None Remove="_00321075-e172-4551-b0c3-11b7b1235345-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Hospital Management System.jpeg" />
+    <Resource Include="Screenshot 2023-12-12 170658.png" />
+    <Resource Include="Screenshot 2023-12-12 182408.png" />
+    <Resource Include="Screenshot 2023-12-12 182849.png" />
+    <Resource Include="_00321075-e172-4551-b0c3-11b7b1235345-removebg-preview.png" />
+  </ItemGroup>
+
+</Project>
